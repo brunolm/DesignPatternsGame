@@ -100,17 +100,6 @@ namespace DesingPatternsGame
                 this.Exit();
 #endif
 
-            if (Controller1.Buttons.LeftShoulder == ButtonState.Pressed)
-            {
-                BackgroundColor = new Color(r.Next(256), r.Next(256), r.Next(256));
-            }
-
-            if (Controller1.Buttons.RightShoulder == ButtonState.Pressed)
-            {
-                BackgroundColor = Color.Black;
-            }
-
-
             if (MoveStretegy.GetType() != typeof(WalkStrategy))
                 MoveStretegy = new WalkStrategy();
 
@@ -119,7 +108,7 @@ namespace DesingPatternsGame
                 MoveStretegy = new RunStrategy();
             }
 
-            UpdateSprite(gameTime);
+            spritePosition = MoveStretegy.Move(spritePosition, Controller1);
 
             base.Update(gameTime);
         }
@@ -138,11 +127,6 @@ namespace DesingPatternsGame
             spriteBatch.End();
 
             base.Draw(gameTime);
-        }
-
-        void UpdateSprite(GameTime gameTime)
-        {
-            spritePosition = MoveStretegy.Move(spritePosition, Controller1);
         }
     }
 }
