@@ -15,6 +15,6 @@ namespace DesingPatternsGame.Strategy
     {
         Vector2 Move(Vector2 spritePosition, GamePadState controllerState);
 
-        void Draw();
+        void Draw(GameTime gameTime, SpriteBatch spriteBatch, Texture2D texture, Vector2 position);
     }
 }

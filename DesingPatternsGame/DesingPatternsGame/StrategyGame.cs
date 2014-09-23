@@ -100,12 +100,15 @@ namespace DesingPatternsGame
                 this.Exit();
 #endif
 
-            if (MoveStretegy.GetType() != typeof(WalkStrategy))
-                MoveStretegy = new WalkStrategy();
-
             if (Controller1.Buttons.B == ButtonState.Pressed)
             {
-                MoveStretegy = new RunStrategy();
+                if (MoveStretegy.GetType() != typeof(RunStrategy))
+                    MoveStretegy = new RunStrategy();
+            }
+            else
+            {
+                if (MoveStretegy.GetType() != typeof(WalkStrategy))
+                    MoveStretegy = new WalkStrategy();
             }
 
             spritePosition = MoveStretegy.Move(spritePosition, Controller1);
@@ -123,7 +126,9 @@ namespace DesingPatternsGame
 
             //
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.Draw(mainCharacter, spritePosition, new Rectangle(8, 0, 30, 60), Color.White);
+
+            MoveStretegy.Draw(gameTime, spriteBatch, mainCharacter, spritePosition);
+            
             spriteBatch.End();
 
             base.Draw(gameTime);
