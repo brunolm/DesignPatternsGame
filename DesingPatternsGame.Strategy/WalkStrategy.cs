@@ -20,7 +20,7 @@ namespace DesingPatternsGame.Strategy
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Texture2D texture, Vector2 position)
         {
-            spriteBatch.Draw(texture, position, new Rectangle(24 * frame, 0, 24, 48), Color.White);
+            spriteBatch.Draw(texture, position, new Rectangle(48 * frame, 48, 48, 48), Color.White);
 
             elapsed += gameTime.ElapsedGameTime.TotalMilliseconds;
 
