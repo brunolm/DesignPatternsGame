@@ -10,7 +10,7 @@ namespace DesingPatternsGame
         /// </summary>
         static void Main(string[] args)
         {
-            using (StrategyGame game = new StrategyGame())
+            using (var game = new ObserverGame())
             {
                 game.Run();
             }
