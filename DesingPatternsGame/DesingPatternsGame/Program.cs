@@ -17,19 +17,24 @@ namespace DesingPatternsGame
             var container = new CompositionContainer(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
             container.ComposeParts(GameIndex.Instance);
 
+            BaseGame game = null;
             try
             {
-                using (var game = GameIndex.Instance[args[0]])
-                {
-                    game.Run();
-                }
+                game = GameIndex.Instance[args[0]];
             }
             catch
             {
-                using (var game = new ObserverGame())
-                {
-                    game.Run();
-                }
+                game = new ObserverGame();
+            }
+
+            try
+            {
+                game.Run();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debugger.Break();
+                game.Dispose();
             }
         }
     }

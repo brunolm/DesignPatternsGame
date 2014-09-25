@@ -41,7 +41,7 @@ namespace DesingPatternsGame.Common
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Texture2D texture, Vector2 position)
         {
-            spriteBatch.Draw(texture, position, new Rectangle(OffsetX + SpriteWidth * Frame, OffsetY + SpriteHeight, SpriteWidth, SpriteHeight), Color.White);
+            spriteBatch.Draw(texture, position, new Rectangle(OffsetX + SpriteWidth * Frame, OffsetY, SpriteWidth, SpriteHeight), Color.White);
 
             elapsed += gameTime.ElapsedGameTime.TotalMilliseconds;
 

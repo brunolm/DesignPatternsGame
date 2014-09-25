@@ -31,8 +31,8 @@ namespace DesingPatternsGame
             fouLu = new DesingPatternsGame.Observer.Foulu(Content.Load<Texture2D>("Foulu"), new Vector2(40, 100));
             follower = new DesingPatternsGame.Observer.Follower(Content.Load<Texture2D>("Ryu"), new Vector2(0, 100));
             
-            fouLu.Animation = new Animation(250, 48, 48, 5);
-            follower.Animation = new Animation(250, 48, 48, 5, 0, 0);
+            fouLu.Animation = new Animation(250, 48, 48, 5, offsetY: 48);
+            follower.Animation = new Animation(250, 48, 48, 5, offsetY: 48);
 
             fouLu.Subscribe(follower);
         }

@@ -15,7 +15,7 @@ namespace DesingPatternsGame.Strategy
 
         public WalkStrategy()
         {
-            this.animation = new Animation(100, 48, 48, 5);
+            this.animation = new Animation(100, 48, 48, 5, offsetY: 48);
         }
 
         public Vector2 Move(Vector2 spritePosition, GamePadState controllerState)

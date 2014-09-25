@@ -15,7 +15,7 @@ namespace DesingPatternsGame.Strategy
 
         public RunStrategy()
         {
-            this.animation = new Animation(100, 48, 48, 5, 0, 48 * 3);
+            this.animation = new Animation(100, 48, 48, 5, 0, 48 * 4);
         }
 
         public Vector2 Move(Vector2 spritePosition, GamePadState controllerState)

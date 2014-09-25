@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Common",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Observer", "DesingPatternsGame.Observer\DesingPatternsGame.Observer.csproj", "{B436989F-9008-4251-9885-80417201752A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.AbstractFactory", "DesingPatternsGame.AbstractFactory\DesingPatternsGame.AbstractFactory.csproj", "{5FC845D0-746E-4AB8-AE4B-9BF38679DC3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -42,6 +44,10 @@ Global
 		{B436989F-9008-4251-9885-80417201752A}.Debug|x86.Build.0 = Debug|x86
 		{B436989F-9008-4251-9885-80417201752A}.Release|x86.ActiveCfg = Release|x86
 		{B436989F-9008-4251-9885-80417201752A}.Release|x86.Build.0 = Release|x86
+		{5FC845D0-746E-4AB8-AE4B-9BF38679DC3F}.Debug|x86.ActiveCfg = Debug|x86
+		{5FC845D0-746E-4AB8-AE4B-9BF38679DC3F}.Debug|x86.Build.0 = Debug|x86
+		{5FC845D0-746E-4AB8-AE4B-9BF38679DC3F}.Release|x86.ActiveCfg = Release|x86
+		{5FC845D0-746E-4AB8-AE4B-9BF38679DC3F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
