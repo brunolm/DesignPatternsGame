@@ -43,7 +43,7 @@ namespace DesingPatternsGame.Observer
 
         public override void Move(GamePadState Controller1)
         {
-            SpritePosition += 2 * new Vector2(Controller1.ThumbSticks.Left.X, SpritePosition.Y);
+            SpritePosition += 2 * new Vector2(Controller1.ThumbSticks.Left.X, 0);
             Notify();
         }
     }
