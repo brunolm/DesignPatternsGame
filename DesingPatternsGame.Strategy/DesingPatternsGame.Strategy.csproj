@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IMoveStrategy.cs" />
+    <Compile Include="MovableCharacter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunStrategy.cs" />
     <Compile Include="WalkStrategy.cs" />

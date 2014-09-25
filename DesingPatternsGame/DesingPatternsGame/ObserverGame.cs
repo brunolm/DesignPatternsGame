@@ -10,9 +10,13 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using DesingPatternsGame.Strategy;
 using DesingPatternsGame.Common;
+using System.ComponentModel.Composition;
 
 namespace DesingPatternsGame
 {
+    [Export]
+    [Export(typeof(BaseGame))]
+    [Export(typeof(ObserverGame))]
     public class ObserverGame : BaseGame
     {
         private DesingPatternsGame.Observer.Foulu fouLu;
