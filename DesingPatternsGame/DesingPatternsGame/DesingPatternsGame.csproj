@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactoryGame.cs" />
+    <Compile Include="AdapterGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ObserverGame.cs" />
@@ -89,6 +90,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.AbstractFactory\DesingPatternsGame.AbstractFactory.csproj">
       <Project>{5fc845d0-746e-4ab8-ae4b-9bf38679dc3f}</Project>
       <Name>DesingPatternsGame.AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Adapter\DesingPatternsGame.Adapter.csproj">
+      <Project>{2886d458-58a7-4a77-a524-d7487b1e1f62}</Project>
+      <Name>DesingPatternsGame.Adapter</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Common\DesingPatternsGame.Common.csproj">
       <Project>{af729afb-a869-4656-8453-03ffd407775d}</Project>
