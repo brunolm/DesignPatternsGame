@@ -10,22 +10,22 @@ namespace DesingPatternsGame.Strategy
 {
     public class MovableCharacter : GameSprite
     {
-        public IMoveStrategy MoveStretegy { get; set; }
+        public IMoveStrategy MoveStrategy { get; set; }
 
         public MovableCharacter(Texture2D spriteTexture, Vector2 spritePosition)
             : base(spriteTexture, spritePosition)
         {
-            MoveStretegy = new WalkStrategy();
+            MoveStrategy = new WalkStrategy();
         }
 
         public override void Move(Microsoft.Xna.Framework.Input.GamePadState Controller1)
         {
-            SpritePosition = this.MoveStretegy.Move(SpritePosition, Controller1);
+            SpritePosition = this.MoveStrategy.Move(SpritePosition, Controller1);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            this.MoveStretegy.Draw(gameTime, spriteBatch, SpriteTexture, SpritePosition);
+            this.MoveStrategy.Draw(gameTime, spriteBatch, SpriteTexture, SpritePosition);
         }
     }
 }

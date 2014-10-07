@@ -36,13 +36,13 @@ namespace DesingPatternsGame
         {
             if (Controller1.Buttons.B == ButtonState.Pressed)
             {
-                if (character.MoveStretegy.GetType() != typeof(RunStrategy))
-                    character.MoveStretegy = new RunStrategy();
+                if (character.MoveStrategy.GetType() != typeof(RunStrategy))
+                    character.MoveStrategy = new RunStrategy();
             }
             else
             {
-                if (character.MoveStretegy.GetType() != typeof(WalkStrategy))
-                    character.MoveStretegy = new WalkStrategy();
+                if (character.MoveStrategy.GetType() != typeof(WalkStrategy))
+                    character.MoveStrategy = new WalkStrategy();
             }
 
             character.Move(Controller1);
