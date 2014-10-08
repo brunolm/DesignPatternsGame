@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Adapter"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Bridge", "DesingPatternsGame.Bridge\DesingPatternsGame.Bridge.csproj", "{AB3F9CF9-C714-4187-A1B8-1888B01D5879}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Builder", "DesingPatternsGame.Builder\DesingPatternsGame.Builder.csproj", "{ED593CE0-2971-45BB-A932-655ECDCE8129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -60,6 +62,10 @@ Global
 		{AB3F9CF9-C714-4187-A1B8-1888B01D5879}.Debug|x86.Build.0 = Debug|x86
 		{AB3F9CF9-C714-4187-A1B8-1888B01D5879}.Release|x86.ActiveCfg = Release|x86
 		{AB3F9CF9-C714-4187-A1B8-1888B01D5879}.Release|x86.Build.0 = Release|x86
+		{ED593CE0-2971-45BB-A932-655ECDCE8129}.Debug|x86.ActiveCfg = Debug|x86
+		{ED593CE0-2971-45BB-A932-655ECDCE8129}.Debug|x86.Build.0 = Debug|x86
+		{ED593CE0-2971-45BB-A932-655ECDCE8129}.Release|x86.ActiveCfg = Release|x86
+		{ED593CE0-2971-45BB-A932-655ECDCE8129}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
