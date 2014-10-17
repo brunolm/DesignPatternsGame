@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="AbstractFactoryGame.cs" />
     <Compile Include="AdapterGame.cs" />
+    <Compile Include="ChainOfResponsibilityGame.cs" />
     <Compile Include="BuilderGame.cs" />
     <Compile Include="BridgeGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +105,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Builder\DesingPatternsGame.Builder.csproj">
       <Project>{ed593ce0-2971-45bb-a932-655ecdce8129}</Project>
       <Name>DesingPatternsGame.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.ChainOfResponsibility\DesingPatternsGame.ChainOfResponsibility.csproj">
+      <Project>{6774cbae-6e1e-4735-809b-2cec8021abc0}</Project>
+      <Name>DesingPatternsGame.ChainOfResponsibility</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Common\DesingPatternsGame.Common.csproj">
       <Project>{af729afb-a869-4656-8453-03ffd407775d}</Project>

@@ -25,7 +25,7 @@ namespace DesingPatternsGame
         {
             base.LoadContent();
 
-            this.CustomDrawing += ObserverGame_CustomDrawing;
+            this.CustomDrawing += BuilderGame_CustomDrawing;
 
             this.mainCharBuilder = new MainCharacterBuilder(Content);
 
@@ -52,7 +52,7 @@ namespace DesingPatternsGame
             base.Update(gameTime);
         }
 
-        void ObserverGame_CustomDrawing(GameTime gameTime)
+        void BuilderGame_CustomDrawing(GameTime gameTime)
         {
             this.character.Draw(gameTime, SpriteBatch);
         }
