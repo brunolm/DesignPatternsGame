@@ -16,15 +16,18 @@ namespace DesingPatternsGame.Common
 
         public Texture2D SpriteTexture { get; set; }
 
+        public virtual uint SpeedRatio { get; set; }
+
         public GameSprite(Texture2D spriteTexture, Vector2 spritePosition)
         {
             SpriteTexture = spriteTexture;
             SpritePosition = spritePosition;
+            SpeedRatio = 1;
         }
 
-        public virtual void Move(GamePadState Controller1)
+        public virtual void Move(GamePadState gamePadState)
         {
-            SpritePosition += 1 * new Vector2(Controller1.ThumbSticks.Left.X, -Controller1.ThumbSticks.Left.X);
+            SpritePosition += SpeedRatio * new Vector2(gamePadState.ThumbSticks.Left.X, 0);
         }
 
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)

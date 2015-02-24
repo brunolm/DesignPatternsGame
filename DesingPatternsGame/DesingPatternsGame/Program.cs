@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new CompositeGame();
+                game = new DecoratorGame();
             }
 
             try

@@ -83,6 +83,7 @@
     <Compile Include="ObserverGame.cs" />
     <Compile Include="CommandGame.cs" />
     <Compile Include="CompositeGame.cs" />
+    <Compile Include="DecoratorGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +124,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Composite\DesingPatternsGame.Composite.csproj">
       <Project>{fd189ae9-ae45-4e22-a8ad-a63e467a9b4a}</Project>
       <Name>DesingPatternsGame.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Decorator\DesingPatternsGame.Decorator.csproj">
+      <Project>{967d36bd-4777-41dd-a439-76a1ea644dea}</Project>
+      <Name>DesingPatternsGame.Decorator</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Observer\DesingPatternsGame.Observer.csproj">
       <Project>{b436989f-9008-4251-9885-80417201752a}</Project>
