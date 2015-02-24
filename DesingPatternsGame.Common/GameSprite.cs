@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DesingPatternsGame.Common
 {
-    public abstract class GameSprite
+    public class GameSprite
     {
         public Vector2 SpritePosition { get; set; }
 

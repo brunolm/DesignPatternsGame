@@ -81,6 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ObserverGame.cs" />
+    <Compile Include="CommandGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.ChainOfResponsibility\DesingPatternsGame.ChainOfResponsibility.csproj">
       <Project>{6774cbae-6e1e-4735-809b-2cec8021abc0}</Project>
       <Name>DesingPatternsGame.ChainOfResponsibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Command\DesingPatternsGame.Command.csproj">
+      <Project>{72f07994-9355-4e06-932c-553650ced99d}</Project>
+      <Name>DesingPatternsGame.Command</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Common\DesingPatternsGame.Common.csproj">
       <Project>{af729afb-a869-4656-8453-03ffd407775d}</Project>
