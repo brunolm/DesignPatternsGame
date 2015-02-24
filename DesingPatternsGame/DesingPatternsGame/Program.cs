@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new DecoratorGame();
+                game = new FacadeGame();
             }
 
             try
