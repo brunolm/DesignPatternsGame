@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.ChainOfR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Command", "DesingPatternsGame.Command\DesingPatternsGame.Command.csproj", "{72F07994-9355-4E06-932C-553650CED99D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Composite", "DesingPatternsGame.Composite\DesingPatternsGame.Composite.csproj", "{FD189AE9-AE45-4E22-A8AD-A63E467A9B4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -78,6 +80,10 @@ Global
 		{72F07994-9355-4E06-932C-553650CED99D}.Debug|x86.Build.0 = Debug|x86
 		{72F07994-9355-4E06-932C-553650CED99D}.Release|x86.ActiveCfg = Release|x86
 		{72F07994-9355-4E06-932C-553650CED99D}.Release|x86.Build.0 = Release|x86
+		{FD189AE9-AE45-4E22-A8AD-A63E467A9B4A}.Debug|x86.ActiveCfg = Debug|x86
+		{FD189AE9-AE45-4E22-A8AD-A63E467A9B4A}.Debug|x86.Build.0 = Debug|x86
+		{FD189AE9-AE45-4E22-A8AD-A63E467A9B4A}.Release|x86.ActiveCfg = Release|x86
+		{FD189AE9-AE45-4E22-A8AD-A63E467A9B4A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

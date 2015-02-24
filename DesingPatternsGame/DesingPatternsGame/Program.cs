@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new CommandGame();
+                game = new CompositeGame();
             }
 
             try
