@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new ObserverGame();
+                game = new BuilderGame();
             }
 
             try

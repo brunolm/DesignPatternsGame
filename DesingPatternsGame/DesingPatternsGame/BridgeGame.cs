@@ -1,16 +1,10 @@
-﻿using DesingPatternsGame.Bridge;
+﻿using System;
+using DesingPatternsGame.Bridge;
 using DesingPatternsGame.Common;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.Linq;
 
 namespace DesingPatternsGame
 {
@@ -19,6 +13,9 @@ namespace DesingPatternsGame
     public class BridgeGame : BaseGame
     {
         private Foulu fouLu;
+
+        private WalkController walkController = new WalkController();
+        private RunController runController = new RunController();
 
         protected override void LoadContent()
         {
@@ -33,16 +30,12 @@ namespace DesingPatternsGame
         {
             if (Controller1.Buttons.B == ButtonState.Pressed)
             {
-                if (fouLu.MoveStrategy.GetType() != typeof(RunStrategy))
-                    fouLu.MoveStrategy = new RunStrategy();
+                runController.Move(fouLu, Controller1);
             }
             else
             {
-                if (fouLu.MoveStrategy.GetType() != typeof(WalkStrategy))
-                    fouLu.MoveStrategy = new WalkStrategy();
+                walkController.Move(fouLu, Controller1);
             }
-
-            fouLu.Move(Controller1);
 
             base.Update(gameTime);
         }
@@ -50,6 +43,33 @@ namespace DesingPatternsGame
         void ObserverGame_CustomDrawing(GameTime gameTime)
         {
             fouLu.Draw(gameTime, SpriteBatch);
+        }
+    }
+
+    public interface IMoveCotroller
+    {
+        void Move(Foulu character, GamePadState gamePadState);
+    }
+
+    public class WalkController : IMoveCotroller
+    {
+        public void Move(Foulu character, GamePadState gamePadState)
+        {
+            if (character.MoveStrategy.GetType() != typeof(WalkStrategy))
+                character.MoveStrategy = new WalkStrategy();
+
+            character.Move(gamePadState);
+        }
+    }
+
+    public class RunController : IMoveCotroller
+    {
+        public void Move(Foulu character, GamePadState gamePadState)
+        {
+            if (character.MoveStrategy.GetType() != typeof(RunStrategy))
+                character.MoveStrategy = new RunStrategy();
+
+            character.Move(gamePadState);
         }
     }
 }
