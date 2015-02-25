@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new FacadeGame();
+                game = new FactoryGame();
             }
 
             try

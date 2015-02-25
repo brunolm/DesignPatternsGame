@@ -85,6 +85,7 @@
     <Compile Include="CompositeGame.cs" />
     <Compile Include="DecoratorGame.cs" />
     <Compile Include="FacadeGame.cs" />
+    <Compile Include="FactoryGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +134,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Facade\DesingPatternsGame.Facade.csproj">
       <Project>{277d3cde-ebda-486a-aa48-5ba9d6e3e5a1}</Project>
       <Name>DesingPatternsGame.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Factory\DesingPatternsGame.Factory.csproj">
+      <Project>{1a0b7a10-eea9-44c3-b2da-f6af2f17628a}</Project>
+      <Name>DesingPatternsGame.Factory</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Observer\DesingPatternsGame.Observer.csproj">
       <Project>{b436989f-9008-4251-9885-80417201752a}</Project>
