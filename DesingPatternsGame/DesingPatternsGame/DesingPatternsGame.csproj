@@ -89,6 +89,7 @@
     <Compile Include="FactoryGame.cs" />
     <Compile Include="MediatorGame.cs" />
     <Compile Include="MementoGame.cs" />
+    <Compile Include="PrototypeGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Observer\DesingPatternsGame.Observer.csproj">
       <Project>{b436989f-9008-4251-9885-80417201752a}</Project>
       <Name>DesingPatternsGame.Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Prototype\DesingPatternsGame.Prototype.csproj">
+      <Project>{2111b996-f896-444a-972d-3ac7eabbe3cb}</Project>
+      <Name>DesingPatternsGame.Prototype</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Strategy\DesingPatternsGame.Strategy.csproj">
       <Project>{232edd69-7028-42fe-95f0-b6bcf1ad5e62}</Project>

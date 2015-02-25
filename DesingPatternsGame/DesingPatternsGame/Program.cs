@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new MementoGame();
+                game = new PrototypeGame();
             }
 
             try
