@@ -92,6 +92,7 @@
     <Compile Include="PrototypeGame.cs" />
     <Compile Include="ProxyGame.cs" />
     <Compile Include="SingletonGame.cs" />
+    <Compile Include="StateGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +169,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Singleton\DesingPatternsGame.Singleton.csproj">
       <Project>{33f202f5-1733-49de-b618-692ec23af2f4}</Project>
       <Name>DesingPatternsGame.Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.State\DesingPatternsGame.State.csproj">
+      <Project>{c7f98c9f-dbc3-4151-a09c-a2f52a19ad33}</Project>
+      <Name>DesingPatternsGame.State</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Strategy\DesingPatternsGame.Strategy.csproj">
       <Project>{232edd69-7028-42fe-95f0-b6bcf1ad5e62}</Project>

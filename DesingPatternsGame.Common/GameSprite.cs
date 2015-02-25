@@ -12,7 +12,7 @@ namespace DesingPatternsGame.Common
     {
         public Vector2 SpritePosition { get; set; }
 
-        public Animation Animation { get; set; }
+        public virtual Animation Animation { get; set; }
 
         public Texture2D SpriteTexture { get; set; }
 

@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new SingletonGame();
+                game = new StateGame();
             }
 
             try

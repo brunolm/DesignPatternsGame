@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Proxy", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Singleton", "DesingPatternsGame.Singleton\DesingPatternsGame.Singleton.csproj", "{33F202F5-1733-49DE-B618-692EC23AF2F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.State", "DesingPatternsGame.State\DesingPatternsGame.State.csproj", "{C7F98C9F-DBC3-4151-A09C-A2F52A19AD33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -132,6 +134,10 @@ Global
 		{33F202F5-1733-49DE-B618-692EC23AF2F4}.Debug|x86.Build.0 = Debug|x86
 		{33F202F5-1733-49DE-B618-692EC23AF2F4}.Release|x86.ActiveCfg = Release|x86
 		{33F202F5-1733-49DE-B618-692EC23AF2F4}.Release|x86.Build.0 = Release|x86
+		{C7F98C9F-DBC3-4151-A09C-A2F52A19AD33}.Debug|x86.ActiveCfg = Debug|x86
+		{C7F98C9F-DBC3-4151-A09C-A2F52A19AD33}.Debug|x86.Build.0 = Debug|x86
+		{C7F98C9F-DBC3-4151-A09C-A2F52A19AD33}.Release|x86.ActiveCfg = Release|x86
+		{C7F98C9F-DBC3-4151-A09C-A2F52A19AD33}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
