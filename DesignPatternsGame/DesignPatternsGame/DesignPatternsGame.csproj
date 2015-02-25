@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{06B6DF86-31CF-4B0C-A966-9C690A19FBB3}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatternsGame</RootNamespace>
+    <AssemblyName>DesignPatternsGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>c21544fa-bc77-489d-a4e7-9c80a79c69ee</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactoryGame.cs" />
+    <Compile Include="AdapterGame.cs" />
+    <Compile Include="ChainOfResponsibilityGame.cs" />
+    <Compile Include="BuilderGame.cs" />
+    <Compile Include="BridgeGame.cs" />
+    <Compile Include="FlyweightGame.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ObserverGame.cs" />
+    <Compile Include="CommandGame.cs" />
+    <Compile Include="CompositeGame.cs" />
+    <Compile Include="DecoratorGame.cs" />
+    <Compile Include="FacadeGame.cs" />
+    <Compile Include="FactoryGame.cs" />
+    <Compile Include="MediatorGame.cs" />
+    <Compile Include="MementoGame.cs" />
+    <Compile Include="PrototypeGame.cs" />
+    <Compile Include="ProxyGame.cs" />
+    <Compile Include="SingletonGame.cs" />
+    <Compile Include="StateGame.cs" />
+    <Compile Include="VisitorGame.cs" />
+    <Compile Include="StrategyGame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DesignPatternsGame.AbstractFactory\DesignPatternsGame.AbstractFactory.csproj">
+      <Project>{5fc845d0-746e-4ab8-ae4b-9bf38679dc3f}</Project>
+      <Name>DesignPatternsGame.AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Adapter\DesignPatternsGame.Adapter.csproj">
+      <Project>{2886d458-58a7-4a77-a524-d7487b1e1f62}</Project>
+      <Name>DesignPatternsGame.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Bridge\DesignPatternsGame.Bridge.csproj">
+      <Project>{ab3f9cf9-c714-4187-a1b8-1888b01d5879}</Project>
+      <Name>DesignPatternsGame.Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Builder\DesignPatternsGame.Builder.csproj">
+      <Project>{ed593ce0-2971-45bb-a932-655ecdce8129}</Project>
+      <Name>DesignPatternsGame.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.ChainOfResponsibility\DesignPatternsGame.ChainOfResponsibility.csproj">
+      <Project>{6774cbae-6e1e-4735-809b-2cec8021abc0}</Project>
+      <Name>DesignPatternsGame.ChainOfResponsibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Command\DesignPatternsGame.Command.csproj">
+      <Project>{72f07994-9355-4e06-932c-553650ced99d}</Project>
+      <Name>DesignPatternsGame.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Common\DesignPatternsGame.Common.csproj">
+      <Project>{af729afb-a869-4656-8453-03ffd407775d}</Project>
+      <Name>DesignPatternsGame.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Composite\DesignPatternsGame.Composite.csproj">
+      <Project>{fd189ae9-ae45-4e22-a8ad-a63e467a9b4a}</Project>
+      <Name>DesignPatternsGame.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Decorator\DesignPatternsGame.Decorator.csproj">
+      <Project>{967d36bd-4777-41dd-a439-76a1ea644dea}</Project>
+      <Name>DesignPatternsGame.Decorator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Facade\DesignPatternsGame.Facade.csproj">
+      <Project>{277d3cde-ebda-486a-aa48-5ba9d6e3e5a1}</Project>
+      <Name>DesignPatternsGame.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Factory\DesignPatternsGame.Factory.csproj">
+      <Project>{1a0b7a10-eea9-44c3-b2da-f6af2f17628a}</Project>
+      <Name>DesignPatternsGame.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Mediator\DesignPatternsGame.Mediator.csproj">
+      <Project>{54337aad-38c6-4b6b-9705-39a635e46aee}</Project>
+      <Name>DesignPatternsGame.Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Memento\DesignPatternsGame.Memento.csproj">
+      <Project>{91c19cc6-58f7-46b4-a808-1e21553d5da8}</Project>
+      <Name>DesignPatternsGame.Memento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Observer\DesignPatternsGame.Observer.csproj">
+      <Project>{b436989f-9008-4251-9885-80417201752a}</Project>
+      <Name>DesignPatternsGame.Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Prototype\DesignPatternsGame.Prototype.csproj">
+      <Project>{2111b996-f896-444a-972d-3ac7eabbe3cb}</Project>
+      <Name>DesignPatternsGame.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Proxy\DesignPatternsGame.Proxy.csproj">
+      <Project>{9d382531-d8c5-49b9-8561-d00633cfd8b4}</Project>
+      <Name>DesignPatternsGame.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Singleton\DesignPatternsGame.Singleton.csproj">
+      <Project>{33f202f5-1733-49de-b618-692ec23af2f4}</Project>
+      <Name>DesignPatternsGame.Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.State\DesignPatternsGame.State.csproj">
+      <Project>{c7f98c9f-dbc3-4151-a09c-a2f52a19ad33}</Project>
+      <Name>DesignPatternsGame.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Strategy\DesignPatternsGame.Strategy.csproj">
+      <Project>{232edd69-7028-42fe-95f0-b6bcf1ad5e62}</Project>
+      <Name>DesignPatternsGame.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesignPatternsGame.Visitor\DesignPatternsGame.Visitor.csproj">
+      <Project>{290d2955-ce89-4c87-b287-eef67cb54f0b}</Project>
+      <Name>DesignPatternsGame.Visitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignPatternsGameContent\DesignPatternsGameContent.contentproj">
+      <Name>DesignPatternsGameContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
