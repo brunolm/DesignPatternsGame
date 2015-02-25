@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new FlyweightGame();
+                game = new MediatorGame();
             }
 
             try
