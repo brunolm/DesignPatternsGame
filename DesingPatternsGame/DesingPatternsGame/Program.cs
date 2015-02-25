@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new StateGame();
+                game = new VisitorGame();
             }
 
             try
