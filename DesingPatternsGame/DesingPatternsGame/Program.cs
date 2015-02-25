@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new PrototypeGame();
+                game = new ProxyGame();
             }
 
             try
