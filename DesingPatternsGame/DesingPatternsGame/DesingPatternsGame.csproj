@@ -78,6 +78,7 @@
     <Compile Include="ChainOfResponsibilityGame.cs" />
     <Compile Include="BuilderGame.cs" />
     <Compile Include="BridgeGame.cs" />
+    <Compile Include="FlyweightGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ObserverGame.cs" />
