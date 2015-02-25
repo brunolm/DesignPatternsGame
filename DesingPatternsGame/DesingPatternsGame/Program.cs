@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new MediatorGame();
+                game = new MementoGame();
             }
 
             try

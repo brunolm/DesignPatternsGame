@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Factory"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Mediator", "DesingPatternsGame.Mediator\DesingPatternsGame.Mediator.csproj", "{54337AAD-38C6-4B6B-9705-39A635E46AEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternsGame.Memento", "DesingPatternsGame.Memento\DesingPatternsGame.Memento.csproj", "{91C19CC6-58F7-46B4-A808-1E21553D5DA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -108,6 +110,10 @@ Global
 		{54337AAD-38C6-4B6B-9705-39A635E46AEE}.Debug|x86.Build.0 = Debug|x86
 		{54337AAD-38C6-4B6B-9705-39A635E46AEE}.Release|x86.ActiveCfg = Release|x86
 		{54337AAD-38C6-4B6B-9705-39A635E46AEE}.Release|x86.Build.0 = Release|x86
+		{91C19CC6-58F7-46B4-A808-1E21553D5DA8}.Debug|x86.ActiveCfg = Debug|x86
+		{91C19CC6-58F7-46B4-A808-1E21553D5DA8}.Debug|x86.Build.0 = Debug|x86
+		{91C19CC6-58F7-46B4-A808-1E21553D5DA8}.Release|x86.ActiveCfg = Release|x86
+		{91C19CC6-58F7-46B4-A808-1E21553D5DA8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

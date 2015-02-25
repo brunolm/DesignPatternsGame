@@ -88,6 +88,7 @@
     <Compile Include="FacadeGame.cs" />
     <Compile Include="FactoryGame.cs" />
     <Compile Include="MediatorGame.cs" />
+    <Compile Include="MementoGame.cs" />
     <Compile Include="StrategyGame.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,10 @@
     <ProjectReference Include="..\..\DesingPatternsGame.Mediator\DesingPatternsGame.Mediator.csproj">
       <Project>{54337aad-38c6-4b6b-9705-39a635e46aee}</Project>
       <Name>DesingPatternsGame.Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DesingPatternsGame.Memento\DesingPatternsGame.Memento.csproj">
+      <Project>{91c19cc6-58f7-46b4-a808-1e21553d5da8}</Project>
+      <Name>DesingPatternsGame.Memento</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DesingPatternsGame.Observer\DesingPatternsGame.Observer.csproj">
       <Project>{b436989f-9008-4251-9885-80417201752a}</Project>
