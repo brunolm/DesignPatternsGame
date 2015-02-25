@@ -24,7 +24,7 @@ namespace DesingPatternsGame
             }
             catch
             {
-                game = new ProxyGame();
+                game = new SingletonGame();
             }
 
             try
